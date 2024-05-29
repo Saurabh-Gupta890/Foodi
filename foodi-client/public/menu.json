@@ -1,0 +1,78 @@
+[
+  {
+    "_id": "642c155b2c4774f05c36eeaa",
+    "name": "Aloo Parota",
+    "recipe": "",
+    "image": "images/food/aloo parota.jpg",
+    "category": "popular",
+    "price": 14.7
+  },
+  {
+    "_id": "642c155b2c4774f05c36eeb9",
+    "name": "Curd-Rice",
+    "recipe": "",
+    "image": "images/food/curd-rice.jpg",
+    "category": "popular",
+    "price": 14.7
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7c",
+    "name": "Chole Bhature",
+    "recipe": "",
+    "image": "images/food/Chole bhatura.jpg",
+    "category": "popular",
+    "price": 14.5
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee88",
+    "name": "Gobhi Fried Rice",
+    "recipe": "",
+    "image": "images/food/gobi fried rice.jpg",
+    "category": "popular",
+    "price": 12.5
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee7a",
+    "name": "Chapati Sabji",
+    "recipe": "",
+    "image": "images/food/Chapati sabzi.jpg",
+    "category": "popular",
+    "price": 14.5
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee74",
+    "name": "Mushroom Manchurian",
+    "recipe": "",
+    "image": "images/food/mushroom manchurian.jpg",
+    "category": "popular",
+    "price": 14.5
+  },
+ 
+ 
+  {
+    "_id": "642c155b2c4774f05c36ee8c",
+    "name": "Onion Dosa",
+    "recipe": "",
+    "image": "images/food/onion dosa.jpg",
+    "category": "popular",
+    "price": 12.5
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee94",
+    "name": "Veg Noodles",
+    "recipe": "",
+    "image": "images/food/veg noodles.jpg",
+    "category": "popular",
+    "price": 12.5
+  },
+  {
+    "_id": "642c155b2c4774f05c36ee9e",
+    "name": "Set Dosa",
+    "recipe": "",
+    "image": "images/food/set dosa.jpg",
+    "category": "popular",
+    "price": 12.9
+  }
+  
+ 
+]
