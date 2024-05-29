@@ -1,17 +1,17 @@
 const express = require("express");
-const Razorpay = require("Razorpay");
+const Razorpay = require("razorpay");
 
 // Razorpay Setup
 
 const payRouter = express.Router();
 
 payRouter.post("/", async (req, res) => {
-//   console.log('hello from backend');
+  //   console.log('hello from backend');
   try {
     // console.log('hello from try');
     const instance = new Razorpay({
-        key_id: process.env.razorpay_key,
-        key_secret: process.env.razorpay_secret,
+      key_id: process.env.razorpay_key,
+      key_secret: process.env.razorpay_secret,
     });
     // console.log('instance');
 
