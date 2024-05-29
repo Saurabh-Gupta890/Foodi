@@ -44,12 +44,12 @@ const adminStats = require("./api/routes/adminStats");
 const orderStats = require("./api/routes/orderStats");
 const payRouter = require("./api/routes/payRouter");
 const mssgRoute = require("./api/routes/mssgRouter");
-app.use("/menu", menuRoutes);
-app.use("/carts", cartsRoutes);
-app.use("/users", usersRoutes);
-app.use("/payments", paymentRoutes);
-app.use("/admin-stats", adminStats);
-app.use("/order-stats", orderStats);
+app.use("/api/menu", menuRoutes);
+app.use("/api/carts", cartsRoutes);
+app.use("/api/users", usersRoutes);
+app.use("/api/payments", paymentRoutes);
+app.use("/api/admin-stats", adminStats);
+app.use("/api/order-stats", orderStats);
 app.use(`/api/create`, payRouter);
 app.use("/api/contact", mssgRoute);
 
