@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 const port = process.env.PORT || 5000;
-
+const path = require("path");
 const stripe = require("stripe")(process.env.PAYMENT_SECRET_KEY);
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
@@ -21,7 +21,7 @@ mongoose
   .connect(
     "mongodb+srv://saurabhworks890:saurabH123@saurabh.sob9ft2.mongodb.net/"
   )
-  .then(console.log("Mongodb connected successfully!"))
+  .then(() => console.log("Mongodb connected successfully!"))
   .catch((error) => console.log("Error connecting to MongoDB: " + error));
 
 // jwt authentication
@@ -29,7 +29,6 @@ mongoose
 // jwt related api
 app.post("/jwt", async (req, res) => {
   const user = req.body;
-  // console.log(user)
   const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
     expiresIn: "1h",
   });
@@ -56,24 +55,12 @@ app.use("/api/contact", mssgRoute);
 
 // payment methods routes
 const verifyToken = require("./api/middlewares/verifyToken");
-// const { default: payRouter } = require("./api/routes/payRouter");
 
-// app.post("/create-payment-intent",verifyToken, async (req, res) => {
-//   const { price } = req.body;
-//   const amount = price*100;
-// console.log(amount);
-
-// Create a PaymentIntent
-//   const paymentIntent = await stripe.paymentIntents.create({
-//     amount: amount,
-//     currency: "usd",
-//     payment_method_types: ["card"],
-//   });
-
-//   res.send({
-//     clientSecret: paymentIntent.client_secret,
-//   });
-// });
+// Serving static files for production
+app.use(express.static(path.join(__dirname, "../foodi-client/dist")));
+app.get("*", (req, res) =>
+  res.sendFile(path.join(__dirname, "../foodi-client/dist/index.html"))
+);
 
 app.get("/", (req, res) => {
   res.send("Foodi Server is Running!");
