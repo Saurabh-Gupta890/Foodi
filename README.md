@@ -1,5 +1,5 @@
 ﻿# complete-mern-project
-![complete-mern-project](/banner.png)
+![complete-mern-project](complete-mern-project-main/foodi-client/public/images/home/banner.png)
 
 ## Table of Contents
 - [Install](#install)
